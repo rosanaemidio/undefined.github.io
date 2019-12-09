@@ -1,0 +1,18 @@
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home__text{
+    width: 320px;
+    
+}
+
+.home__text > p{
+    font-size: 25px;
+    text-align: center;
+}
