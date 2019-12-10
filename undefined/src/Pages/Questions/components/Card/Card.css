@@ -11,3 +11,17 @@
 .contento{
     margin-top: auto;
 }
+
+.box__btn{
+    margin-left: 300px;
+    margin-bottom: 10px;
+}
+
+.btn-prox{
+    width: 100px;
+    height: 20px;
+    border-radius: 8px;
+    background-color: #905392;
+    font-family: 'Ribeye Marrow', cursive;
+    color: white;
+}

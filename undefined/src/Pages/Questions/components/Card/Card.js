@@ -1,24 +1,26 @@
 import React from 'react'
 import Option from '../Option/Option'
-import './Card.css'
 import Situation from '../Situation/Situation'
+import Button from '../../../../components/Button/Button'
+
+import './Card.css'
 
 
-function Card(){
+function Card(props){
     return(
         <div className='container'>
-          
-
             <div>              
                    <Situation 
-                   quest='Oi bebê, vamos codar?'/>
+                   quest={props.quest}/>
             </div>
             <div className='contento'>
-                <Option/>
-                <Option/>
-                <Option/>
-                <Option/>
-
+                <Option children={props.children}/>
+                <Option children={props.children}/>
+                <Option children={props.children}/>
+                <Option children={props.children}/>
+            </div>
+           <div className='box__btn'>
+                <Button classe='btn-prox' click={props.click}> Next </Button>
             </div>
         </div>
     )
