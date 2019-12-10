@@ -1,15 +1,17 @@
 import React from 'react'
 import Option from '../Option/Option'
 import './Card.css'
+import Situation from '../Situation/Situation'
+
 
 function Card(){
     return(
         <div className='container'>
           
 
-            <div>
-                <p>Alguma pergunta bem marcante</p>
-
+            <div>              
+                   <Situation 
+                   quest='Oi bebê, vamos codar?'/>
             </div>
             <div className='contento'>
                 <Option/>

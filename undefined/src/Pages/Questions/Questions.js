@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import Card from '../Questions/components/Card/Card'
 
-import './Question.css'
+import './Questions.css'
 
 
 class Questions extends Component{
     constructor(){
         super()
         this.state = {
+            
 
         }
     }
