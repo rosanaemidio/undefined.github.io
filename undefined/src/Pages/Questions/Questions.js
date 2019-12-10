@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Card from '../Questions/components/Card/Card'
-// import { getPerguntas} from '../../service/perguntas'
+import { getPerguntas} from '../../service/perguntas'
 
 
 import './Questions.css'
@@ -10,25 +10,24 @@ class Questions extends Component{
     constructor(){
         super()
         this.state = {
-            // res: []
-            // perg:[{}]
-            // cor:
+            res: []
+           
         }
     }
     
-    // componentDidMount(){
-    //     let data = getPerguntas()
-    //     console.log(data)
-    //         // .then(batata =>{
-            //     this.setState({
-            //         // perg: response
-            //         // console.log(response.data)
-            //     })
-            // })
-            // .catch(error =>{
-            //     console.error(error)
-            // })
-    // }
+    componentDidMount(){
+        getPerguntas()
+            .then(batata =>{
+                console.log(batata.data)
+                this.setState({
+                    // perg: response
+                    // console.log(response.data)
+                })
+            })
+            .catch(error =>{
+                // console.error(error)
+            })
+    }
 
     render(){
         return(

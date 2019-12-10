@@ -1,14 +1,14 @@
 import axios from 'axios'
 
 const config = {
-    baseURL: 'http://localhost:3000/perguntineas', 
+    baseURL: 'https://my-json-server.typicode.com/rosanaemidio/perguntas', 
     timeout: 1000
   }
   
   const protocolo = axios.create(config)
   
   export function getPerguntas () {
-    const url = '../../public/perguntas.json'
+    const url = '/perguntas'
     return protocolo.get(url)
   }
   
