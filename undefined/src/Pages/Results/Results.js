@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
-const Results(){
+const Results = ()=>{
     return(
-
+        <Fragment>
+            <h2>    Oi</h2>
+        </Fragment>
     )
 }
 
