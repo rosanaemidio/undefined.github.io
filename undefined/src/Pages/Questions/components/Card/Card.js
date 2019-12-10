@@ -14,10 +14,10 @@ function Card(props){
                    quest={props.quest}/>
             </div>
             <div className='contento'>
-                <Option children={props.children}/>
-                <Option children={props.children}/>
-                <Option children={props.children}/>
-                <Option children={props.children}/>
+                <Option children={props.a}/>
+                <Option children={props.b}/>
+                <Option children={props.c}/>
+                <Option children={props.d}/>
             </div>
            <div className='box__btn'>
                 <Button classe='btn-prox' click={props.click}> Next </Button>

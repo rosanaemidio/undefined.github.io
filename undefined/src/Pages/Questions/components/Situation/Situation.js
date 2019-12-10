@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 function Situation (props){
     return (
-        <Fragment>
+        <div>
             <p>{props.quest}</p>
-        </Fragment>
+        </div>
     )
 
 }

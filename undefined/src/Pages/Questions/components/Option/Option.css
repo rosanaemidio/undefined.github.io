@@ -3,6 +3,9 @@
     height: 50px;
     background-color: pink;
     border-radius: 10px;
+    font-family: 'Ribeye Marrow', cursive;
+    color: #000000;
+    font-style: inherit;
 }
 
 .container-op{

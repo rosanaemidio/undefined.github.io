@@ -10,29 +10,39 @@ class Questions extends Component{
     constructor(){
         super()
         this.state = {
-            res: []
+            res: [{}]
            
         }
     }
     
     componentDidMount(){
         getPerguntas()
-            .then(batata =>{
-                console.log(batata.data)
+            .then(response =>{
+                console.log(response.data)
                 this.setState({
-                    // perg: response
-                    // console.log(response.data)
+                    res: response.data
                 })
             })
             .catch(error =>{
-                // console.error(error)
+                console.error(error)
             })
     }
 
+    // mudapergunta = (e)=>{
+    //     e.
+    // }
     render(){
+        const {pergunta, A, B, C, D} = this.state.res[0]
         return(
             <div className='content'>
-                <Card/>
+                <Card
+                quest={pergunta}
+                a={A}
+                b={B}
+                c={C}
+                d={D}
+                // click={mudapergunta}
+                />
             </div>
         ) 
     }
