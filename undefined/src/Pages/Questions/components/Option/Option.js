@@ -7,7 +7,7 @@ import './Option.css'
 const Option= (props) =>{
     return(
        <div className='container-op'>
-            <Button classe='btn-option'> {props.children}              
+            <Button classe={props.classe} click={props.select}> {props.children}              
             </Button>
        </div> 
     )
