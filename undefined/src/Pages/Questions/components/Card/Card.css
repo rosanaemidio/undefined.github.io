@@ -9,7 +9,12 @@
 }
 
 .contento{
-    margin-top: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .box__btn{
@@ -24,4 +29,25 @@
     background-color: #905392;
     font-family: 'Ribeye Marrow', cursive;
     color: white;
+}
+.btn__selected{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: gray;
+    border-radius: 10px;
+    font-family: 'Ribeye Marrow', cursive;
+    color: #000000;
+    font-style: inherit;
+}
+
+.btn-option{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: pink;
+    border-radius: 10px;
+    font-family: 'Ribeye Marrow', cursive;
+    color: #000000;
+    font-style: inherit;
 }

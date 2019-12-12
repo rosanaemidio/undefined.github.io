@@ -1,107 +1,84 @@
 import React, { Component } from 'react'
 import Card from '../Questions/components/Card/Card'
-import { getPerguntas} from '../../service/perguntas'
+import { getPerguntas } from '../../service/perguntas'
 
 
 import './Questions.css'
 import Button from '../../components/Button/Button'
 
 
-class Questions extends Component{
-    constructor(){
+class Questions extends Component {
+    constructor() {
         super()
         this.state = {
-            res: [{}],
-            value: '',
-            color: 'btn-option',
-            conteudo : ''
+            res: [],
+            resAtual: {},
+            value: 0,
+            conteudo: '',
+            index: 0
             //adicionar state pra trocar de pagina - Olhar componente Contato da lu            
         }
-        this.handleClickColor = this.handleClickColor.bind(this)
+
     }
-    
-    componentDidMount(){
+
+    componentDidMount() {
         getPerguntas()
-            .then(response =>{
-                console.log(response.data)
+            .then(response => {
                 this.setState({
-                    res: response.data
-                    
+                    res: response.data,
+                    resAtual: response.data[0]
                 })
             })
-            .catch(error =>{
+            .catch(error => {
                 console.error(error)
             })
     }
-    handleClickColor = (e) => {
 
-            this.setState(state=>({
-             color: !state.color             
-            }));
-
-        }
-        
-        // ?'btn-option'  : 
-    
-
-    buttonClicked = (event)=> {
-        this.setState({
-            value: this.state.value+1        
-        });
-    }
 
     faztudo = (e) => {
-       
-     this.buttonClicked(this.state.value)     
-    this.changeColor(this.state.color)       
-    
-     console.log("clickou1");
+        this.buttonClicked(this.state.value)
+        this.changeColor(this.state.color)
     }
 
     handleClick = (e) => {
         this.props.history.push({
-            pathname:'/perguntineas'
+            pathname: '/perguntineas'
         })
-       
+
     }
 
-    // handleMudaPergunta =(proximaPergunta) => {
-    //     this.setState({
-    //         conteudo: proximaPergunta
-    //     })
-        // this.state === this.clicked 
-    // }
-    handleClick = (e) => {
-        this.props.history.push({
-            pathname:'/resultis'
+    handleMudaPergunta = () => {
+        let mudaIndex = this.state.index + 1
+        this.setState({
+            resAtual: this.state.res[mudaIndex],
+            index: mudaIndex
         })
-       
+    }
+
+    handleClickResultis = (e) => {
+        this.props.history.push({
+            pathname: '/resultis'
+        })
+
     }
     render() {
-        const {pergunta, A, B, C, D} = this.state.res[0] 
-
-        return(
+        const { pergunta, A, B, C, D } = this.state.resAtual
+        return (
             <div className='content'>
                 <Card
-                quest={pergunta}
-                a={A}
-                b={B}
-                c={C}
-                d={D}
-                classe={this.state.color}
-                select= {this.faztudo}
-                // {this.state.color ? 'btn__selected' : 'btn-option'}
-
-
-                // click={this.handleMudaPergunta}
+                    quest={pergunta}
+                    a={A}
+                    b={B}
+                    c={C}
+                    d={D}
+                    click={this.handleMudaPergunta}
                 />
-                <Button click={this.handleClick} classe='btn-results'>
-                    Ver resultado
 
+                <Button click={this.handleClickResultis} classe='btn-results'>
+                    Ver resultado
                 </Button>
-               
             </div>
-        ) 
+        )
     }
 
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../../../../components/Button/Button'
 
 import './Option.css'
 
@@ -7,8 +6,7 @@ import './Option.css'
 const Option= (props) =>{
     return(
        <div className='container-op'>
-            <Button classe={props.classe} click={props.select}> {props.children}              
-            </Button>
+            <button classe={props.classe} onClick={props.select}> {props.children}   </button>                      
        </div> 
     )
 }
