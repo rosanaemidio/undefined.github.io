@@ -2,6 +2,8 @@ import React from 'react'
 
 import './Mensagem.css'
 const Mensagem =(props) =>{
+    console.log(props, '<<<');
+    
     return(
         <div className='msg__box'>
             <h2> {props.titulo}</h2>

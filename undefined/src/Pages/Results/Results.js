@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 import { getResults } from '../../service/results'
-import './Results.css'
 import Mensagem from './Mensagem'
 
+import './Results.css'
 class Results extends Component {
     state = {
-        res: [{}]
+        res: [{},{},{}],
+        // relin:{}
     }
 
     componentDidMount() {
         getResults()
             .then(response => {
-                console.log(response.data);
                 this.setState({
                     res: response.data
                 })
@@ -21,19 +21,20 @@ class Results extends Component {
     }
 
     render() {
-        const { titulo, texto, gif } = this.state.res[0]
         console.log(this.state.res);
+        const { titulo, texto, gif } = this.state.res[2]
         
-        
-        return (
+        return this.state.res.length > 0 ? (        
             <div className='home'>
-                    <Mensagem 
-                    titulo= {titulo}
-                    texto={texto}
-                    gif={gif}
-                    />
+                <Mensagem 
+                titulo= {titulo}
+                texto={texto}
+                gif={gif}
+                />
             </div>
+
         )
+        : null
     }
 }
 
