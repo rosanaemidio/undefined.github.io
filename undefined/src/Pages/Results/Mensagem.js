@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Mensagem.css'
 const Mensagem =(props) =>{
-    console.log(props, '<<<');
+    console.log(props, '<<<h');
     
     return(
         <div className='msg__box'>

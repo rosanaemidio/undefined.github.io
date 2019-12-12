@@ -6,7 +6,6 @@ import './Results.css'
 class Results extends Component {
     state = {
         res: [{},{},{}],
-        // relin:{}
     }
 
     componentDidMount() {
@@ -21,8 +20,7 @@ class Results extends Component {
     }
 
     render() {
-        console.log(this.state.res);
-        const { titulo, texto, gif } = this.state.res[2]
+        const { titulo, texto, gif } = this.state.res[0]
         
         return this.state.res.length > 0 ? (        
             <div className='home'>

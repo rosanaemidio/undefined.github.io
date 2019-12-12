@@ -64,19 +64,21 @@ class Questions extends Component {
     render() {
         const { pergunta, A, B, C, D } = this.state.resAtual
         return (
-            <div className='content'>
-                <Card
-                    quest={pergunta}
-                    a={A}
-                    b={B}
-                    c={C}
-                    d={D}
-                    click={this.handleMudaPergunta}
-                />
+            <div>
+                <div className='content'>
+                    <Card
+                        quest={pergunta}
+                        a={A}
+                        b={B}
+                        c={C}
+                        d={D}
+                        click={this.handleMudaPergunta}
+                    />
 
-                <Button click={this.handleClickResultis} classe='btn-results'>
-                    Ver resultado
-                </Button>
+                    <Button click={this.handleClickResultis} classe='btn-results'>
+                        Ver resultado
+                    </Button>
+                </div>'
             </div>
         )
     }
