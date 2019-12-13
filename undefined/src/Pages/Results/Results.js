@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { getResults } from '../../service/results'
 import Mensagem from './Mensagem'
+
 
 import './Results.css'
 class Results extends Component {
     state = {
         res: [{},{},{}],
+        item: {}
     }
 
     componentDidMount() {
@@ -20,19 +22,22 @@ class Results extends Component {
     }
 
     render() {
-        const { titulo, texto, gif } = this.state.res[0]
-        
-        return this.state.res.length > 0 ? (        
-            <div className='home'>
-                <Mensagem 
-                titulo= {titulo}
-                texto={texto}
-                gif={gif}
-                />
-            </div>
-
+        const { titulo, texto, gif } = this.state.res[2]
+     
+        return this.state.res.length > 0  ? (        
+            <Fragment>
+                {this.state.item && 
+                <div className='home'>
+                    <Mensagem 
+                    titulo= {titulo}
+                    texto={texto}
+                    gif={gif}
+                    />
+                </div>
+                }
+                </Fragment>
         )
-        : null
+                : null
     }
 }
 

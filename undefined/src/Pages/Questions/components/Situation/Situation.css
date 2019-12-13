@@ -1,3 +1,6 @@
 .box__pergs{
-    width: auto;
+    width: 80%;
+    padding: 15px;
+    margin-left: 50px;
+    text-align: center;
 }

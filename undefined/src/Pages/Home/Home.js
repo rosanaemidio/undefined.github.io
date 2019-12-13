@@ -24,7 +24,7 @@ render (){
                     <div className='home__text'>
                         <span> Olá pessoa linda!! </span>
                         <p>
-                            Este mini quiz tem o intuito de apontar se vc está em um relacionamento abusivo.O quiz consiste em situações e você terá de escolher 
+                            O <span>In the name of love</span> é um mini quiz com intuito de apontar atitudes de um relacionamento abusivo.O quiz consiste em situações e você terá de escolher 
                             as alternativas de acordo com aquilo que a pessoa a quem você está pensando já tenha te dito. 
                             Lembrando que relacionamento abusivo não é só entre casal, tem familiar e entre amigos também.
                         </p>

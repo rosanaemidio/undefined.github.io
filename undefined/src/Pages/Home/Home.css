@@ -21,6 +21,11 @@
     font-size: 25px;
     text-align: center;
 }
+.home__text > p > span{
+    font-size: 25px;
+    font-weight: bold;
+    /* color:pink; */
+}
 
 .home__text > span{
     font-size: 25px;

@@ -1,8 +1,10 @@
 import React from 'react'
 
+import './Situation.css'
+
 function Situation (props){
     return (
-        <div>
+        <div className="box__pergs">
             <p>{props.quest}</p>
         </div>
     )
