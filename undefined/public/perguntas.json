@@ -1,0 +1,39 @@
+ [
+    {
+        "_id": 1,
+        "pergunta": "O que essa pessoa costuma falar pra você? ",
+        "A": "Desse jeito você vai acabar sozinha",
+        "B": "Não acho que você seja capaz disso",
+        "C": "Ninguém vai te amar como eu te amo",
+        "D": "Você é uma das pessoas mais incríveis que eu conheço."
+        
+    },
+    {
+        "_id": 2,
+        "pergunta": "Você tem um compromisso sem a pessoa. O que essa geralmente ela fala ... ",
+        "A": "Me avisa quando chegar em casa.",
+        "B": "Quem vai estar lá?  Só vai ter homem/mulher, né? ",
+        "C": "Eu confio em você, mas nos outros não.",
+        "D": "Diz que não vê problema, mas te manda mensagem de 5 em 5 minutos pra saber o que está fazendo."
+        
+    },
+
+    {
+        "_id": 3,
+        "pergunta": "Qual a opinião dessa pessoa sobre os seus amigos? ",
+        "A": "Ninguém presta.",
+        "B": "Os seus amigos são meus também.",
+        "C": "Você já tem ELX, e que só isso basta. ",
+        "D": "Tudo bem, você ter amigos. Eu tbm tenho. "
+        
+    }, 
+     {
+        "_id": 4,
+        "pergunta": "Neste tempo em que você está nesse relacionamento, você... ",
+        "A": "Mudei tanto que nem me reconheço mais.",
+        "B": "Me afastei de pessoas pq ELX não gostava delas.",
+        "C": "Deixei de me vestir da forma como eu gostava.",
+        "D": "Evoluí como ser humano e me tornei uma pessoa melhor em todos os sentidos."   
+        
+    }
+]

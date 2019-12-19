@@ -1,0 +1,9 @@
+.btn{
+    width: 200px;
+    height: 70px;
+    background-color: #957896;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Ribeye Marrow', cursive;
+}
