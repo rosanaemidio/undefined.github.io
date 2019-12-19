@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 70vh;
+    background-color: #DDEAEF;
+}
+
+.contento{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__btn{
+    margin-left: 300px;
+    margin-bottom: 10px;
+}
+
+.btn-prox{
+    width: 100px;
+    height: 20px;
+    border-radius: 8px;
+    background-color: #905392;
+    font-family: 'Ribeye Marrow', cursive;
+    color: white;
+}
+.btn__selected{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: gray;
+    border-radius: 10px;
+    font-family: 'Ribeye Marrow', cursive;
+    color: #000000;
+    font-style: inherit;
+}
+
+.btn-option{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: pink;
+    border-radius: 10px;
+    font-family: 'Ribeye Marrow', cursive;
+    color: #000000;
+    font-style: inherit;
+}

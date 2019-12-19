@@ -1,0 +1,18 @@
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #C3E0ED;
+  font-family: 'Ribeye Marrow', cursive;
+  color:#957896;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
